@@ -1,6 +1,6 @@
 namespace Ecommerce_Backend.Model
 {
-    public class Payment
+    public class Payment:BaseEntity
     {
         public int Id { get; set; }
         public int OrderId { get; set; }
@@ -8,7 +8,7 @@ namespace Ecommerce_Backend.Model
         public decimal Amount { get; set; }
         public PaymentStatus Status { get; set; } = PaymentStatus.PENDING;
         public string? TransactionId { get; set; }   // gateway se aayega (Razorpay/Stripe transaction id)
-        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        // public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public DateTime? PaidAt { get; set; }   // jab payment successful hua tab ka time
     }
 

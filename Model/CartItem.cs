@@ -2,7 +2,7 @@ using Ecommerce_Backend.Model;
 
 namespace Ecommerce_Backend
 {
-    public class CartItem
+    public class CartItem:BaseEntity
     {
         public int Id{get;set;}
         public int CartId{get;set;}

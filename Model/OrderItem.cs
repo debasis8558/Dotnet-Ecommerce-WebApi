@@ -1,6 +1,6 @@
 namespace Ecommerce_Backend.Model
 {
-    public class OrderItem
+    public class OrderItem:BaseEntity
     {
         public int Id{get;set;}
         public int OrderId{get;set;}

@@ -12,7 +12,9 @@ namespace Ecommerce_Backend
         public async Task AddProduct(ProductReqDto dto)
         {
             var productUrl = await repo.UploadProductImage(dto.ProductImgUrl);
+            Console.WriteLine("DTO Description = " + dto.Description);
             var product = mapper.Map<Product>(dto);//dto->entity
+            System.Console.WriteLine("Description"+product.Description);
             product.ProductImgUrl = productUrl;
             await repo.Add(product);
             await repo.SaveChange();

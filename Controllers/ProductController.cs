@@ -13,7 +13,7 @@ namespace Ecommerce_Backend.Controllers
         [HttpPost]
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> AddProduct([FromForm] ProductReqDto dto)
-        {
+        {   System.Console.WriteLine("description in controller"+dto.Description);
             await service.AddProduct(dto);
             return Ok(new { msg = "product added successfully" });
         }
