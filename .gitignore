@@ -1,0 +1,35 @@
+# Build folders
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+
+# Visual Studio
+.vs/
+
+# Rider
+.idea/
+
+# VS Code
+.vscode/
+
+# Logs
+logs/
+*.log
+
+# Environment files
+.env
+.env.*
+
+# Secrets
+appsettings.Development.json
+
+# Uploaded files
+uploads/
+wwwroot/uploads/
+
+# NuGet
+*.nupkg
+`
